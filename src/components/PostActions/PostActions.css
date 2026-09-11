@@ -1,0 +1,155 @@
+/* ============================= */
+/* POST ACTIONS */
+/* ============================= */
+
+.post-actions {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.post-action-buttons {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 18px;
+}
+
+.action-button {
+  width: 28px;
+  height: 28px;
+
+  border: none;
+  background: transparent;
+
+  padding: 2px;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  color: #262626;
+
+  font-size: 22px;
+
+  box-sizing: border-box;
+
+  transition: opacity 0.2s ease,
+              transform 0.15s ease;
+}
+
+.action-button:hover {
+  opacity: 0.6;
+}
+
+.action-button:active {
+  transform: scale(0.9);
+}
+
+.action-button:disabled {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.liked-icon {
+  color: #ed4956;
+}
+
+.likes-count {
+  margin: 8px 0 0;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #262626;
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .post-action-buttons {
+    gap: 17px;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .post-action-buttons {
+    gap: 16px;
+  }
+
+  .action-button {
+    width: 27px;
+    height: 27px;
+
+    font-size: 21px;
+  }
+
+  .likes-count {
+    font-size: 13px;
+    margin-top: 7px;
+  }
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 500px) {
+
+  .post-action-buttons {
+    gap: 15px;
+  }
+
+  .action-button {
+    width: 26px;
+    height: 26px;
+
+    font-size: 20px;
+  }
+
+  .likes-count {
+    font-size: 13px;
+  }
+
+}
+
+
+/* ============================= */
+/* VERY SMALL PHONES */
+/* ============================= */
+
+@media (max-width: 360px) {
+
+  .post-action-buttons {
+    gap: 13px;
+  }
+
+  .action-button {
+    width: 25px;
+    height: 25px;
+
+    font-size: 19px;
+  }
+
+  .likes-count {
+    font-size: 12px;
+  }
+
+}

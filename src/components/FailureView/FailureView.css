@@ -1,0 +1,47 @@
+.failure-view {
+  min-height: 420px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+
+.failure-image {
+  width: 250px;
+  max-width: 80%;
+  margin-bottom: 25px;
+}
+
+.failure-title {
+  margin: 0 0 10px;
+  color: #262626;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.failure-description {
+  margin: 0 0 22px;
+  max-width: 400px;
+  color: #8e8e8e;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.retry-button {
+  border: none;
+  border-radius: 6px;
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 10px 22px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background-color: #1877f2;
+}

@@ -1,0 +1,230 @@
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fafafa;
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 1000px;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+/* LEFT IMAGE */
+
+.login-image-container {
+  width: 52%;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.login-illustration {
+  width: 100%;
+  max-width: 520px;
+  max-height: 600px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* RIGHT FORM */
+
+.login-form-container {
+  width: 350px;
+  min-width: 320px;
+  background: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 45px 40px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* LOGO */
+
+.login-logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #000000;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  line-height: 1;
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+
+.login-title {
+  margin: 0 0 35px;
+  font-family: 'Brush Script MT', 'Segoe Script', cursive;
+  font-size: 36px;
+  font-weight: 600;
+  color: #262626;
+}
+
+/* FORM */
+
+.login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form label {
+  margin-bottom: 7px;
+  color: #262626;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+}
+
+.login-form input {
+  width: 100%;
+  height: 42px;
+  padding: 0 12px;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background: #fafafa;
+  color: #262626;
+  font-size: 14px;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #a8a8a8;
+  background: #ffffff;
+}
+
+.login-form input::placeholder {
+  color: #8e8e8e;
+}
+
+.login-form input:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* ERROR */
+
+.login-error {
+  margin: -5px 0 15px;
+  color: #ed4956;
+  font-size: 12px;
+}
+
+/* BUTTON */
+
+.login-button {
+  width: 100%;
+  height: 42px;
+  border: none;
+  border-radius: 6px;
+  background: #0095f6;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.login-button:hover {
+  background: #1877f2;
+}
+
+.login-button:disabled {
+  background: #b2dffc;
+  cursor: not-allowed;
+}
+
+/* TABLET */
+
+@media (max-width: 850px) {
+  .login-container {
+    gap: 30px;
+  }
+
+  .login-image-container {
+    width: 48%;
+  }
+
+  .login-form-container {
+    width: 330px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .login-page {
+    padding: 20px;
+  }
+
+  .login-container {
+    min-height: auto;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .login-image-container {
+    width: 100%;
+    min-height: auto;
+    height: 280px;
+  }
+
+  .login-illustration {
+    width: 280px;
+    max-height: 280px;
+  }
+
+  .login-form-container {
+    width: 100%;
+    max-width: 350px;
+    padding: 35px 30px;
+  }
+}
+
+/* SMALL MOBILE */
+
+@media (max-width: 400px) {
+  .login-page {
+    padding: 10px;
+  }
+
+  .login-image-container {
+    height: 220px;
+  }
+
+  .login-illustration {
+    width: 230px;
+    max-height: 220px;
+  }
+
+  .login-form-container {
+    border: none;
+    padding: 25px 20px;
+  }
+
+  .login-title {
+    font-size: 32px;
+  }
+}

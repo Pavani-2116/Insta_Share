@@ -1,0 +1,351 @@
+/* ============================= */
+/* POST CARD */
+/* ============================= */
+
+.post-card {
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* POST HEADER */
+/* ============================= */
+
+.post-header {
+  width: 100%;
+  min-height: 64px;
+  padding: 10px 16px;
+
+  display: flex;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+.post-user-button {
+  max-width: 100%;
+
+  border: none;
+  background: transparent;
+
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  cursor: pointer;
+}
+
+.post-profile-image {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 1px solid #dbdbdb;
+
+  display: block;
+
+  flex-shrink: 0;
+}
+
+.post-user-name {
+  min-width: 0;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  color: #262626;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
+/* ============================= */
+/* POST IMAGE */
+/* ============================= */
+
+.post-image {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 1 / 1;
+
+  object-fit: cover;
+  object-position: center;
+
+  background-color: #f5f5f5;
+
+  margin: 0;
+  padding: 0;
+}
+
+
+/* ============================= */
+/* POST CONTENT */
+/* ============================= */
+
+.post-content {
+  width: 100%;
+
+  padding: 12px 16px 16px;
+
+  box-sizing: border-box;
+}
+
+
+/* ============================= */
+/* CAPTION */
+/* ============================= */
+
+.post-caption {
+  margin: 8px 0 10px;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  color: #262626;
+
+  overflow-wrap: anywhere;
+}
+
+.post-caption strong {
+  font-weight: 600;
+}
+
+
+/* ============================= */
+/* COMMENT FORM */
+/* ============================= */
+
+.comment-form {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 14px;
+
+  padding-top: 12px;
+
+  border-top: 1px solid #efefef;
+
+  box-sizing: border-box;
+}
+
+.comment-form input {
+  flex: 1;
+
+  min-width: 0;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  font-size: 14px;
+
+  padding: 8px 0;
+}
+
+.comment-form input::placeholder {
+  color: #8e8e8e;
+}
+
+.comment-form button {
+  flex-shrink: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #0095f6;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.comment-form button:disabled {
+  opacity: 0.4;
+
+  cursor: default;
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+  .post-card {
+    margin-bottom: 20px;
+  }
+
+  .post-content {
+    padding: 11px 14px 15px;
+  }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+
+  .post-card {
+    border-left: none;
+    border-right: none;
+
+    border-radius: 0;
+
+    margin-bottom: 16px;
+  }
+
+  .post-header {
+    min-height: 58px;
+
+    padding: 8px 12px;
+  }
+
+  .post-profile-image {
+    width: 36px;
+    height: 36px;
+  }
+
+  .post-user-button {
+    gap: 10px;
+  }
+
+  .post-user-name {
+    font-size: 13px;
+  }
+
+  .post-content {
+    padding: 10px 12px 14px;
+  }
+
+  .post-caption {
+    font-size: 13px;
+    line-height: 1.45;
+  }
+
+  .comment-form {
+    gap: 8px;
+  }
+
+  .comment-form input {
+    font-size: 13px;
+  }
+
+  .comment-form button {
+    font-size: 13px;
+  }
+
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 500px) {
+
+  .post-header {
+    min-height: 54px;
+    padding: 7px 10px;
+  }
+
+  .post-profile-image {
+    width: 34px;
+    height: 34px;
+  }
+
+  .post-user-button {
+    gap: 9px;
+  }
+
+  .post-user-name {
+    font-size: 13px;
+  }
+
+  .post-content {
+    padding: 9px 10px 13px;
+  }
+
+  .post-caption {
+    font-size: 13px;
+  }
+
+  .comment-form {
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+
+}
+
+
+/* ============================= */
+/* VERY SMALL PHONES */
+/* ============================= */
+
+@media (max-width: 360px) {
+
+  .post-header {
+    min-height: 52px;
+    padding: 6px 9px;
+  }
+
+  .post-profile-image {
+    width: 32px;
+    height: 32px;
+  }
+
+  .post-user-button {
+    gap: 8px;
+  }
+
+  .post-user-name {
+    font-size: 12px;
+  }
+
+  .post-content {
+    padding: 8px 9px 12px;
+  }
+
+  .post-caption {
+    font-size: 12px;
+  }
+
+  .comment-form input {
+    font-size: 12px;
+  }
+
+  .comment-form button {
+    font-size: 12px;
+  }
+
+}

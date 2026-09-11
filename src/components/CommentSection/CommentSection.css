@@ -1,0 +1,90 @@
+/* ============================= */
+/* COMMENTS SECTION */
+/* ============================= */
+
+.comments-section {
+  width: 100%;
+
+  margin-top: 8px;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+
+  box-sizing: border-box;
+}
+
+.comment-item {
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 1.4;
+
+  color: #262626;
+
+  overflow-wrap: anywhere;
+}
+
+.comment-user {
+  font-weight: 600;
+  margin-right: 6px;
+}
+
+.comment-text {
+  color: #262626;
+  overflow-wrap: anywhere;
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 768px) {
+  .comments-section {
+    margin-top: 7px;
+    gap: 5px;
+  }
+
+  .comment-item {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .comment-user {
+    margin-right: 5px;
+  }
+}
+
+
+/* ============================= */
+/* SMALL MOBILE */
+/* ============================= */
+
+@media (max-width: 500px) {
+  .comments-section {
+    margin-top: 6px;
+    gap: 5px;
+  }
+
+  .comment-item {
+    font-size: 12px;
+    line-height: 1.45;
+  }
+}
+
+
+/* ============================= */
+/* VERY SMALL PHONES */
+/* ============================= */
+
+@media (max-width: 360px) {
+  .comment-item {
+    font-size: 12px;
+  }
+
+  .comment-user {
+    margin-right: 4px;
+  }
+}
