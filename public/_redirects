@@ -1,0 +1,2 @@
+/api/* https://apis.ccbp.in/:splat 200
+/* /index.html 200
